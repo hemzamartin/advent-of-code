@@ -6,13 +6,8 @@ const input = fs
   .toString()
   .trim()
   .split('\n\n')
-  .map((line) =>
-    line
-      .split('\n')
-      .join(' ')
-      .split(' ')
-      .map((passport) => passport.split(':'))
-  );
+  .map((lines) => lines.split('\n'));
+
 module.exports = {
   input,
 };
